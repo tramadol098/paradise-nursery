@@ -1,19 +1,18 @@
-import React from 'react';
-import './App.css';
-import AboutUs from './AboutUs';
+import React, { useState } from 'react';
+import ProductList from './ProductList';
 
-function App() {
+export default function App() {
+  const [showProductList, setShowProductList] = useState(false);
+
+  const handleGetStartedClick = () => {
+    setShowProductList(true);
+  };
+
   return (
-    <div className="App">
-      <div className="hero">
-        <h1>Paradise Nursery</h1>
-        <p>Bring nature into your home</p>
-        <button className="get-started">Get Started</button>
-      </div>
-      
-      <AboutUs />
+    <div className="background-image">
+      <h1>Paradise Nursery</h1>
+      <button onClick={handleGetStartedClick}>Get Started</button>
+      {showProductList && <ProductList />}
     </div>
   );
 }
-
-export default App;
