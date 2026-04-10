@@ -1,36 +1,36 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/id/1015/1920/1080');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    color: white;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/id/1015/1920/1080');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: white;
 }
 
 .App {
-    text-align: center;
+  text-align: center;
 }
 
 .hero {
-    padding: 100px 20px;
+  padding: 100px 20px;
 }
 
 .hero h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
+  font-size: 4rem;
+  margin-bottom: 20px;
 }
 
 .get-started {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 40px;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .get-started:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
