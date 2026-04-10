@@ -1,18 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProductList from './ProductList';
+import CartPage from './CartItem';
+import AboutUs from './AboutUs';
 
 export default function App() {
-  const [showProductList, setShowProductList] = useState(false);
-
-  const handleGetStartedClick = () => {
-    setShowProductList(true);
-  };
-
   return (
-    <div className="background-image">
-      <h1>Paradise Nursery</h1>
-      <button onClick={handleGetStartedClick}>Get Started</button>
-      {showProductList && <ProductList />}
-    </div>
+    <Router>
+      <Routes>
+        {/* Home page shows AboutUs */}
+        <Route path="/" element={<AboutUs />} />
+
+        {/* Product listing page */}
+        <Route path="/products" element={<ProductList />} />
+
+        {/* Cart page */}
+        <Route path="/cart" element={<CartPage items={[]} />} />
+      </Routes>
+    </Router>
   );
 }
